@@ -1,5 +1,8 @@
 <?php
 
 return array(
-    'bridgebb-apikey' => 'secretkey',
+    'bridgebb-apikey' => 'lenovobobo',
+    'enabled' => true,
+    'username-column' => 'username',
+    'password-column' => 'password'
 );
