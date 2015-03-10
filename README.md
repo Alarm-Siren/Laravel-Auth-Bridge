@@ -7,8 +7,14 @@ Allows phpBB3 to use the Laravel Auth driver to create/authenticate accounts.
 
 ####Add to your composer.json
 ```
+"repositories": [
+  {
+    "type": "vcs",
+    "url": "https://github.com/Nimoi/Laravel-Auth-Bridge"
+  }
+],
 "require": {
-    "webcode/phpbb-bridge": "1.0.*@dev"
+    "webcode/bridgebb": "dev-angel"
 }
 ```
 
@@ -37,7 +43,7 @@ $ composer update
 
 ####Copy all files in the phpbb_root directory to your phpBB install
 
-####Edit the file located at {PHPBB-ROOT}/includes/auth/auth_bridgebb.php
+####Edit the file located at {PHPBB-ROOT}/ext/laravel/bridgebb/auth/provider/bridgebb.php
 ```
 define('LARAVEL_URL', 'http://www.example.com/'); //your laravel application's url
 define('BRIDGEBB_API_KEY', "yoursecretapikey"); //the same key you created earlier

@@ -22,10 +22,10 @@ class BridgeBBController extends Controller {
     }
 
     private function _validateCredentials($username, $password) {
-        if (Config::get('bridgebb::api.internal-api.enabled')) {
+        if (Config::get('bridgebb::api.enabled')) {
             if (Auth::validate(array(
-                        Config::get('bridgebb::api.internal-api.user-model.username-column') => $username,
-                        Config::get('bridgebb::api.internal-api.user-model.password-column') => $password
+                        Config::get('bridgebb::api.username-column') => $username,
+                        Config::get('bridgebb::api.password-column') => $password
                     ))) {
                 //TODO: Return user account information like email
                 return array('response' => 'success');
