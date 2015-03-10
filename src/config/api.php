@@ -1,8 +1,12 @@
 <?php
 
 return array(
-    'bridgebb-apikey' => 'lenovobobo',
-    'enabled' => true,
-    'username-column' => 'username',
-    'password-column' => 'password'
+    'bridgebb-apikey' => 'yoursecretapikey',
+    'interal-api' => array(
+        'enabled' => TRUE,
+        'user-model' => array(
+            'username-column' => 'username',
+            'password-column' => 'password'
+        )
+    )
 );

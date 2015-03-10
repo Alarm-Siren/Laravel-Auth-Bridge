@@ -7,19 +7,15 @@
         {
             "name": "R.A.Stone",
             "email": "rastone@webcode.io"
-        },
-        {
-            "name": "Nathan Cagle",
-            "email": "nathanielcagle@gmail.com"
         }
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "4.2.*"
+        "illuminate/support": "4.1.*"
     },
     "autoload": {
         "psr-0": {
-            "Webcode\\Bridgebb\\": "src/"
+            "Webcode\\BridgeBB\\": "src/"
         }
     },
     "scripts": {
