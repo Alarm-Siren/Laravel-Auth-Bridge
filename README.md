@@ -1,4 +1,4 @@
-BridgeBB for Laravel 4.2 and PhpBB 3.1.3
+BridgeBB for Laravel 4.2 and PhpBB 3.1.3 (BETA)
 ===========
 
 Allows phpBB3 to use the Laravel Auth driver to create/authenticate accounts.
